@@ -12,7 +12,8 @@ const UserSchema = new Schema({
 		required:[true,'butuh banget diisi']
 	},
 	login_type:{
-		type: Number
+		type: Number,
+		default: 1
 	},
 	status_user:{
 		type: Boolean,

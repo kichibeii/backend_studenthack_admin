@@ -14,7 +14,9 @@ mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({extented:true}));
 app.use(bodyParser.json());
 app.use('/api',require('./routes/api'));
-app.use('/login',require('./routes/login'));
+//user controller
+app.use('/users',require('./routes/user.routes'));
+
 
 //listen for request
 app.listen(process.env.port || 4000,function(){
